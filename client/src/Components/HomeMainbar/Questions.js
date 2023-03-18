@@ -32,8 +32,8 @@ function Questions({ question }) {
               // .split(" ")
               // .join("")
               // .slice(0, 3)
-              // .concat(" ago")}{" "}
-            }
+              // .concat(" ago"){" "}
+            }{" "}
             {question.userPosted}
           </p>
         </div>
