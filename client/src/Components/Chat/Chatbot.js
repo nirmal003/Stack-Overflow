@@ -12,7 +12,7 @@ function Chatbot({ handleChat }) {
   //   });
 
   const configuration = new Configuration({
-    // apiKey: process.env.REACT_APP_OPENAI_KEY,
+    apiKey: process.env.REACT_APP_OPENAI_KEY,
   });
 
   const openai = new OpenAIApi(configuration);
@@ -22,8 +22,6 @@ function Chatbot({ handleChat }) {
   const [option, setOption] = useState({});
   const [result, setResult] = useState("");
   const [input, setInput] = useState("");
-
-  //   console.log(process.env.REACT_APP_OPENAI_KEY);
 
   const selectOption = (option) => {
     setOption(option);
