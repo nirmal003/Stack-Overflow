@@ -10,6 +10,7 @@ API.interceptors.request.use((req) => {
       JSON.parse(localStorage.getItem("Profile")).token
     }`;
   }
+
   return req;
 });
 
